@@ -1,9 +1,4 @@
-# Core Dependencies (only what dashboard needs)
 streamlit==1.31.0
 pandas==2.2.0
 numpy==1.26.4
-xgboost==2.0.3
-scikit-learn==1.4.0
-
-# Visualization
 plotly==5.18.0
