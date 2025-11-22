@@ -56,23 +56,27 @@ st.markdown("""
 def load_artifacts():
     """Load all necessary artifacts."""
     try:
+        # Get the directory where this script is located
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        artifacts_dir = os.path.join(current_dir, 'artifacts')
+        
         # Load predictor
         predictor = VehiclePricePredictor(
-            model_path='artifacts/xgboost_optimized.pkl',
-            encoders_path='artifacts/label_encoders.pkl',
-            metadata_path='artifacts/model_metadata.pkl'
+            model_path=os.path.join(artifacts_dir, 'xgboost_optimized.pkl'),
+            encoders_path=os.path.join(artifacts_dir, 'label_encoders.pkl'),
+            metadata_path=os.path.join(artifacts_dir, 'model_metadata.pkl')
         )
         
         # Load lookup tables
-        with open('artifacts/lookup_tables.pkl', 'rb') as f:
+        with open(os.path.join(artifacts_dir, 'lookup_tables.pkl'), 'rb') as f:
             lookups = pickle.load(f)
         
         # Load dashboard data
-        with open('artifacts/dashboard_data.pkl', 'rb') as f:
+        with open(os.path.join(artifacts_dir, 'dashboard_data.pkl'), 'rb') as f:
             dashboard_data = pickle.load(f)
         
         # Load samples
-        with open('artifacts/sample_predictions.pkl', 'rb') as f:
+        with open(os.path.join(artifacts_dir, 'sample_predictions.pkl'), 'rb') as f:
             samples = pickle.load(f)
         
         return predictor, lookups, dashboard_data, samples
