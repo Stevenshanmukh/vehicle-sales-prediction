@@ -13,9 +13,9 @@ class VehiclePricePredictor:
     Simplified interface for vehicle price prediction in dashboard.
     """
     
-    def __init__(self, model_path='artifacts/xgboost_optimized.pkl', 
-                 encoders_path='artifacts/label_encoders.pkl',
-                 metadata_path='artifacts/model_metadata.pkl'):
+    def __init__(self, model_path='app/artifacts/xgboost_optimized.pkl', 
+                 encoders_path='app/artifacts/label_encoders.pkl',
+                 metadata_path='app/artifacts/model_metadata.pkl'):
         """Load model and preprocessing artifacts."""
         
         with open(model_path, 'rb') as f:
