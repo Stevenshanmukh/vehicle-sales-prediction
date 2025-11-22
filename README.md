@@ -1,13 +1,13 @@
 # 🚗 Vehicle Sales Price Prediction - Production ML System
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Live_Demo-FF4B4B.svg)](YOUR_STREAMLIT_URL_HERE)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Live_Demo-FF4B4B.svg)](https://vehicle-sales-prediction.streamlit.app)
 [![Kaggle](https://img.shields.io/badge/Dataset-Kaggle-20BEFF.svg)](https://www.kaggle.com/datasets/syedanwarafridi/vehicle-sales-data)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 > **End-to-end production ML system achieving 96.82% R² accuracy in vehicle price prediction**
 
-**[🚀 Live Demo](YOUR_STREAMLIT_URL_HERE)** | [📊 Notebooks](notebooks/) | [📖 Documentation](#documentation)
+**[🚀 Live Demo](https://vehicle-sales-prediction.streamlit.app)** | [📊 Notebooks](notebooks/) | [📖 Documentation](#documentation)
 
 <div align="center">
   <img src="images/dashboard_preview.png" alt="Dashboard Preview" width="800"/>
@@ -81,7 +81,7 @@ A **production-grade machine learning system** that predicts vehicle selling pri
 
 ## 🚀 Live Demo
 
-**Try the interactive dashboard:** [YOUR_STREAMLIT_URL](YOUR_STREAMLIT_URL_HERE)
+**Try the interactive dashboard:** [https://vehicle-sales-prediction.streamlit.app](https://vehicle-sales-prediction.streamlit.app)
 
 Features:
 - Enter vehicle details (year, make, model, mileage, etc.)
