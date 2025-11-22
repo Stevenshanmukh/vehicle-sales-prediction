@@ -1,0 +1,14 @@
+# Core Dependencies
+streamlit==1.31.0
+pandas==2.2.0
+numpy==1.26.4
+xgboost==2.0.3
+scikit-learn==1.4.0
+
+# Visualization
+matplotlib==3.8.2
+seaborn==0.13.2
+plotly==5.18.0
+
+# Utilities
+pickle5==0.0.12

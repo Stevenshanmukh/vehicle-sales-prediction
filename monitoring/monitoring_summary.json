@@ -1,0 +1,22 @@
+{
+  "created_date": "2025-11-21T18:12:27.144664",
+  "baseline_samples": 558825,
+  "features_monitored": 17,
+  "numeric_features": 8,
+  "categorical_features": 9,
+  "simulation_results": {
+    "scenarios_tested": 4,
+    "total_alerts_generated": 21,
+    "high_severity_alerts": 3,
+    "detection_accuracy": "100%"
+  },
+  "artifacts": [
+    "monitoring/baseline_profiles.pkl",
+    "monitoring/baseline_profiles.json",
+    "monitoring/drift_simulation_results.pkl",
+    "monitoring/monitoring_config.json",
+    "monitoring/alert_rules.md",
+    "monitoring/drift_monitoring_dashboard.png"
+  ],
+  "deployment_ready": true
+}

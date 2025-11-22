@@ -1,0 +1,41 @@
+@"
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Data files (too large for GitHub - available on Kaggle)
+data/raw/*.csv
+data/interim/*.csv
+data/processed/*.csv
+
+# Note: Download data from https://www.kaggle.com/datasets/syedanwarafridi/vehicle-sales-data
+
+# Large model files (optional - comment out if you want to include them)
+# models/final/xgboost_optimized.pkl
+# app/artifacts/xgboost_optimized.pkl
+
+# Keep all other pkl files (encoders, metadata, etc.) - they're small
+"@ | Set-Content .gitignore

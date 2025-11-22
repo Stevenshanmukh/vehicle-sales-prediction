@@ -1,0 +1,53 @@
+{
+  "detector_config": {
+    "ks_threshold": 0.05,
+    "psi_threshold": 0.2,
+    "mean_shift_threshold": 0.1,
+    "chi2_threshold": 0.05
+  },
+  "alert_rules": {
+    "HIGH": {
+      "condition": "PSI > 0.25 OR entropy_change > 0.3",
+      "action": "Send immediate notification + retrain model",
+      "frequency": "Immediate"
+    },
+    "MEDIUM": {
+      "condition": "0.1 < PSI < 0.25 OR 0.15 < entropy_change < 0.3",
+      "action": "Send daily digest + schedule investigation",
+      "frequency": "Daily"
+    },
+    "LOW": {
+      "condition": "PSI < 0.1 OR minor entropy change",
+      "action": "Log to monitoring dashboard",
+      "frequency": "Weekly summary"
+    }
+  },
+  "monitoring_schedule": {
+    "drift_check_frequency": "Daily",
+    "full_report_frequency": "Weekly",
+    "model_retraining_trigger": "HIGH severity alerts for 3 consecutive days"
+  },
+  "features_monitored": {
+    "numeric": [
+      "year",
+      "condition",
+      "odometer",
+      "mmr",
+      "vehicle_age",
+      "log_odometer",
+      "age_odo_interaction",
+      "has_date"
+    ],
+    "categorical": [
+      "make",
+      "body",
+      "transmission",
+      "state",
+      "color",
+      "interior",
+      "seller_grouped",
+      "model_grouped",
+      "trim_grouped"
+    ]
+  }
+}

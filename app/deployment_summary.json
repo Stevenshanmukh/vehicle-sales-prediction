@@ -1,0 +1,30 @@
+{
+  "project": "Vehicle Sales & Market Insights",
+  "model": "XGBoost Regressor (Optimized)",
+  "created_date": "2025-11-21T17:32:49.162423",
+  "performance": {
+    "test_mae": 887.4828858110235,
+    "test_r2": 0.9681696587483535,
+    "test_mape": 12.301606727062437
+  },
+  "artifacts": {
+    "model": "app/artifacts/xgboost_optimized.pkl",
+    "encoders": "app/artifacts/label_encoders.pkl",
+    "metadata": "app/artifacts/model_metadata.pkl",
+    "lookups": "app/artifacts/lookup_tables.pkl",
+    "samples": "app/artifacts/sample_predictions.pkl",
+    "dashboard_data": "app/artifacts/dashboard_data.pkl"
+  },
+  "features": {
+    "total": 17,
+    "numeric": 8,
+    "categorical": 9
+  },
+  "data": {
+    "training_samples": 391177,
+    "validation_samples": 83824,
+    "test_samples": 83824,
+    "total_samples": 558825
+  },
+  "deployment_ready": true
+}

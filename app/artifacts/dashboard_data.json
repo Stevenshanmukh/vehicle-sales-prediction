@@ -1,0 +1,55 @@
+{
+  "overall_metrics": {
+    "mae": 708.7088574753435,
+    "rmse": 1202.2709926314135,
+    "mape": 13.410776890874253,
+    "r2": 0.9847931002538899,
+    "median_error": 484.541015625,
+    "total_predictions": 558825,
+    "mean_actual_price": 13611.358810003132,
+    "mean_predicted_price": 13610.2490234375
+  },
+  "feature_importance_top10": [
+    {
+      "feature": "mmr",
+      "importance": 0.6168791651725769
+    },
+    {
+      "feature": "body",
+      "importance": 0.0896623283624649
+    },
+    {
+      "feature": "age_odo_interaction",
+      "importance": 0.0845140665769577
+    },
+    {
+      "feature": "make",
+      "importance": 0.058557312935590744
+    },
+    {
+      "feature": "model_grouped",
+      "importance": 0.030039841309189796
+    },
+    {
+      "feature": "year",
+      "importance": 0.028413239866495132
+    },
+    {
+      "feature": "odometer",
+      "importance": 0.027546828612685204
+    },
+    {
+      "feature": "condition",
+      "importance": 0.012359526939690113
+    },
+    {
+      "feature": "trim_grouped",
+      "importance": 0.012269409373402596
+    },
+    {
+      "feature": "transmission",
+      "importance": 0.009031998924911022
+    }
+  ],
+  "timestamp": "2025-11-21T17:24:31.643178"
+}
