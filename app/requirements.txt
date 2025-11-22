@@ -11,4 +11,4 @@ seaborn==0.13.2
 plotly==5.18.0
 
 # Utilities
-pickle5==0.0.12
+scipy==1.12.0
