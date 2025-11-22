@@ -1,7 +1,6 @@
---only-binary=:all:
-
 streamlit
 pandas
 numpy
 plotly
-ls
+xgboost
+scikit-learn
